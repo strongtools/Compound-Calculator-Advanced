@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    color: #ffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+    color: #034fc9;
+    opacity: 0.8;
+}
+
+h2 {
+    font-size: 1.15rem;
+    padding-bottom: 1em;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1rem;
+    padding-bottom: 0.2em;    
+}
+
+
+/* BACKGROUND */
+.wrapper {
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* THE BOX */
+.main-content {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    width: 90%;
+    max-width: 700px;
+    min-height: 80vh;
+    margin: 0 auto;
+    padding: 4em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    /* it ensures circles are in the back of the element, not in the front */
+    backdrop-filter: blur(2rem);
+}
+
+/* INPUT */
+.input-area,
+.mining-area {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+input {
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #034fc9;
+    padding: 1em;
+    border: 0; 
+    border-radius: 5px;
+}
+
+/* NFT AREA */
+.nft-area {
+    width: 80%;
+}
+
+.nft-one,
+.nft-two,
+.nft-three,
+.nft-four {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bronze,
+.silver,
+.gold,
+.platinum {
+    font-weight: 800;
+}
+
+.bronze {
+    color: #cd7f32;
+}
+
+.silver {
+    color: #8c8c8c;
+}
+
+.gold {
+    color: #ffe44d;
+}
+
+.platinum {
+    color: #e5e4e2;
+}
+
+.number-nft-area {
+    width: 30%;
+}
+
+/* STRONG API AREA */
+.strong-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 0.5em;
+}
+
+.strong-price {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+    margin-left: 10px;
+}
+
+/* BUTTON */
+button {
+    padding: 1em 2em;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
+    border: 1px solid #034fc9;
+    color: #034fc9;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 250ms;
+    transform: scale(1);
+    border-radius: 5px;
+}
+
+#reset-btn {
+    background: none;
+    border: 1px solid #034fc9;
+    margin-left: 0.5em;
+}
+
+button:hover {
+    transform: scale(1.1); 
+}
+
+/* JS DISPLAY AREA */
+#display-area {
+    margin-top: 1em;
+}
+.span-color {
+    color: #034fc9;
+    font-weight: 700;
+}
+
+/* FOOTER AREA */
+.footer-area P {
+    color: black;
+    font-size: 0.75rem;
+}
+
+.footer-area {
+    padding-top: 2em;
+}
+
+.contact-info {
+    font-weight: 700;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    .input-area,
+    .mining-area,
+    .nft-area {
+        width: 100%;
+    }
+    input {
+        padding: 0.75em;
+    }
+    /* .main-content {
+        min-height: 50vh;
+    } */
+    ::placeholder {
+        font-size: 0.6rem !important;
+    }
+    button {
+        padding: 0.75em 1.5em;
+    }
+    .main-content {
+        padding: 2em 1em;
+    }
+    .footer-area p {
+        font-size: 0.6rem;
+    }
+}
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRONG node calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <main class="main-content">
+            <section>
+                <h1>Calculator for compounding your STRONG nodes and your daily income.</h1>
+                <h2>Calculate how many days it will take you to reach the wanted amount of nodes if you are creating a new node every time you reach 10 STRONG coins AND/OR calculate your daily income.</p>
+            </section>
+            <!-- CURRENT + WANTED INPUTS -->
+            <section class="input-area">
+                <input type="number" placeholder="Current number of nodes" id="current-area"/>
+                <input type="number" placeholder="Desired amount of nodes" id="wanted-area"/>
+            </section>
+            <!-- NFT INPUTS -->
+            <section class="nft-area">
+                <div class="nft-one">
+                    <p class="bronze">BRONZE</p>
+                    <input type="number" id="bronze-nft" class="number-nft-area"/>
+                </div>
+                <div class="nft-two">
+                    <p class="silver">SILVER</p>
+                    <input type="number" id="silver-nft" class="number-nft-area"/>
+                </div>
+                <div class="nft-three">
+                    <p class="gold">GOLD</p>
+                    <input type="number" id="gold-nft" class="number-nft-area"/>
+                </div>
+                <div class="nft-four">
+                    <p class="platinum">PLATINUM</p>
+                    <input type="number" id="platinum-nft" class="number-nft-area"/>
+                </div>
+            </section>
+            <!-- MINING INPUT -->
+            <section class="mining-area">
+                <input type="number" placeholder="Number of coins minining" id="coins-mined" />
+            </section>
+            <!-- STRONG API AREA -->
+            <section class="strong-area">
+                <img class="strong-icon"/>
+                <p class="strong-price">STRONG</p>
+            </section>
+            <!-- BUTTONS -->
+            <div class="button-area">
+                <button type="button" id="calculate-btn">Calculate</button>
+                <button type="button" id="reset-btn">Reset</button>
+            </div>
+            <!-- CALCULATOR DISPLAY AREA -->
+            <section>
+                <p id="display-area"></p>
+            </section>
+
+            <section class="footer-area">
+                <p>Made with ❤️ by a Strong Girl</p>
+                <p>Any donations appreciated:</p>
+                <p class="contact-info">0xDB3dCDB4b06B4398d36Ff2C92ACfc2ae46Ec9C44</p>
+                <p>Contact:</p>
+                <p class="contact-info">strongblockgirl@gmail.com</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
